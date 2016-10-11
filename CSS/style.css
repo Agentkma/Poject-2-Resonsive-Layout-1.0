@@ -229,7 +229,7 @@ footer {
 
 
 
-  /* DESKTOP SCREEN*/
+  /******* DESKTOP SCREEN*******/
     @media (min-width: 1024px){
 
 
@@ -257,8 +257,6 @@ footer {
   width:33.33%;
   margin: 0 auto;
   }
-
-
 
     }
 
