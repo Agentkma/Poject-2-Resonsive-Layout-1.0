@@ -44,13 +44,14 @@ img {
       padding-top: 1em;
       padding-bottom: 1em;
       width:100%;
+
       }
 
 p {
-
-
   text-align: center;
   padding: .5em 0;
+  width: 90%;
+  margin: 0 auto;
   }
 
 a {
@@ -68,18 +69,16 @@ footer {
 
 /*Classes */
 
-/*.main-container{
-  width:90%;
-  margin: 0 auto;
-}*/
 
 
 
 .main-nav a {
     background-color: white;
     display: block;
-    margin: .25em .75em;
+    margin-top: .25em;
+    padding-left: .75em;
     padding-top: .25em;
+    padding-right: .25em;
     font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
@@ -89,11 +88,13 @@ footer {
 .profile-pic{
   width:60%;
   margin: 0 auto;
-  padding-top: 1em;
+  padding-top:1em;
+  padding-left: 1em;
 }
 
 .profile-intro{
   font-size: 1.25em;
+  padding: .5em .5em;
 }
 
 .port-background{
@@ -111,7 +112,6 @@ footer {
   padding-bottom: 1em;
   margin: 0 auto;
   text-align: center;
-
   }
 
 
@@ -161,13 +161,14 @@ footer {
 .profile-section {
   display: inline-block;
   width:90%;
+  margin: 0 auto;
   }
 
 .profile-pic {
   display: inline-block;
   float:right;
   width:40%;
-  margin: 0 auto;
+
   }
 
 .profile-intro{
@@ -177,16 +178,19 @@ footer {
   width: 60%;
   }
 
-.port-background{
-  background: white;
-  background-size: cover;
-  margin:  auto;
-  }
+
+
 
 .main-portfolio{
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   }
+
+.portfolio-text{
+  min-height: 5em;
+  max-height: 5em;
+  padding-bottom: 2em;
+}
 
 .col-1{
   display:inline-block;
@@ -225,6 +229,7 @@ footer {
   padding-left: 1em;
   }
 
+
   }
 
 
@@ -246,8 +251,17 @@ footer {
   .main-nav li{
     float: right;
     padding-top: .5em;
+    text-align: right;
     }
 
+.profile-pic {
+  padding-right: .5em;
+}
+
+.port-background{
+    width: 90%;
+    margin: 0 auto;
+    }
 
 .first-col,
 .middle-col,
@@ -256,35 +270,35 @@ footer {
   float:left;
   width:33.33%;
   margin: 0 auto;
+  padding-left: .5em;
+  padding-right: .5em;
   }
 
     }
 
+    /** CLEARFIX
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    contenteditable attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that are clearfixed.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
+  .cf::before,
+  .cf::after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
 
+  .cf::after {
+      clear: both;
+  }
 
-  /** CLEARFIX
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.cf::before,
-.cf::after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.cf::after {
-    clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-/*.cf {
-    *zoom: 1;
-}*/
+  /**
+   * For IE 6/7 only
+   * Include this rule to trigger hasLayout and contain floats.
+   */
+  /*.cf {
+      *zoom: 1;
+  }*/
