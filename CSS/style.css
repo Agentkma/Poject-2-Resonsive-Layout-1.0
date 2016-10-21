@@ -19,11 +19,14 @@ body {
   padding-top: 1em;
     }
 
-
+header {
+  padding-bottom: 1em;
+  }
 
 h1 {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1.5em;
   }
 
 h2 {
@@ -41,15 +44,15 @@ h3 {
 
 
 img {
-      padding-top: 1em;
-      padding-bottom: 1em;
+      padding-top: 1.5em;
+      padding-bottom: .5em;
       width:100%;
 
       }
 
 p {
   text-align: center;
-  padding: .5em 0;
+  padding-bottom: 1.5em;
   width: 90%;
   margin: 0 auto;
   }
@@ -63,16 +66,11 @@ a {
 footer {
   border-top: 1px solid black;
   margin: 0 auto;
+
   }
 
 
-
-/*Classes */
-
-
-
-
-.nav a {
+nav a {
     background-color: white;
     width: 90%;
     margin: 0 auto;
@@ -80,24 +78,36 @@ footer {
     margin-top: .25em;
     padding-left: .75em;
     padding-top: .25em;
-    padding-right: .25em;
     font-size: 1.25em;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 2em;
     }
 
+
+
+/*************CLASSES ************/
+
+
+
 .profile-pic{
   width:60%;
   margin: 0 auto;
-  padding-top:1em;
+  padding-top:1.5em;
+  padding-bottom: 1em;
   padding-left: 1em;
-}
+  }
 
 .profile-intro{
   font-size: 1.25em;
-  padding: .5em .5em;
-}
+  padding-bottom: .5em;
+  }
+
+.portfolio-heading{
+  padding-bottom: 1.5em;
+  padding-top: 2em;
+  margin: 0;
+    }
 
 .port-background{
   width: 100%;
@@ -112,20 +122,23 @@ footer {
 
 .main-portfolio{
   width:90%;
-  padding-top: 1em;
   padding-bottom: 1em;
-  margin: 1em auto;
   text-align: center;
-
-
+  margin: 0 auto;
   }
 
-
-.student-name {
-  display: inline-block;
-  float: left;
-  font-weight: bold;
+.skills, .contact{
+  padding-top: 3em;
   }
+
+.phone, .email {
+  padding-top: 2em;
+}
+
+.email{
+  padding-bottom: 5em;
+  }
+
 
 .main-footer {
   padding-top: 2em;
@@ -134,10 +147,21 @@ footer {
   margin: 0 auto;
   }
 
+.header-name {
+
+  float: left;
+  font-weight: bold;
+  /*padding-bottom: 1.5em;*/
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  }
+
 .back-to-top a{
-  display: inline-block;
+  /*display: inline-block;*/
   float:right;
   font-weight: bold;
+  font-size: .75em;
   text-transform: uppercase;
   }
 
@@ -153,7 +177,9 @@ footer {
 
   @media (min-width: 768px){
 
-
+  header {
+    padding: 1em 0;
+    }
 
 .main-nav a{
   background: azure;
@@ -161,6 +187,7 @@ footer {
 
 .main-nav li{
   display: inline-block;
+  margin: 0 1.5em;
   }
 
 
@@ -171,14 +198,13 @@ footer {
   }
 
 .profile-pic {
-  display: inline-block;
+
   float:right;
   width:40%;
-
   }
 
 .profile-intro{
-  display:inline-block;
+
   line-height: 2em;
   float: left;
   width: 60%;
@@ -186,7 +212,9 @@ footer {
 
 .profile-intro p {
   text-align: left;
-}
+  margin-left: 0;
+  padding-top: 1.5em;
+  }
 
 
 
@@ -199,7 +227,7 @@ footer {
   min-height: 5em;
   max-height: 5em;
   padding-bottom: 2em;
-}
+  }
 
 .col-1{
   display:inline-block;
@@ -225,21 +253,34 @@ footer {
   margin: 1em auto;
   }
 
+/*.main-footer{
+  display: inline-block;
+  }*/
+
+.header-name{
+  /*display: inline-block;*/
+  float: left;
+  font-size: 1em;
+  }
+    }
+
 .back-to-top a{
   float:left;
   display:none;
   }
 
 
-.footer-nav a{
-  display:inline-block;
+.footer-nav{
   float:right;
+  }
+
+.footer-nav a{
+  display: inline-block;
+  float: left;
   text-transform: uppercase;
   padding-left: 1em;
   }
 
-
-  }
 
 
 
@@ -254,23 +295,35 @@ footer {
 
 .header-section {
   width:90%;
-  margin: 0 auto;
+  margin: 1em auto;
+  }
+
+.main-nav{
+  float:right;
   }
 
 .main-nav li{
-  float: right;
+  float: left;
   padding-top: .5em;
-  text-align: right;
+  margin-left: 2em;
+  margin-right: 0;
+
   }
 
 .profile-pic {
-  padding-right: .5em;
+
+  float: right;
 }
 
 .port-background{
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     }
+
+.main-portfolio{
+  width: 96%;
+  margin: 0 auto;
+  }
 
 .first-col,
 .middle-col,
