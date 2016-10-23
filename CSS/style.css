@@ -20,13 +20,12 @@ body {
     }
 
 header {
-  padding-bottom: 1em;
+  padding-bottom: 1.25em;
   }
 
 h1 {
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
   }
 
 h2 {
@@ -52,9 +51,7 @@ img {
 
 p {
   text-align: center;
-  padding-bottom: 1.5em;
-  width: 90%;
-  margin: 0 auto;
+  /*padding-bottom: 1.5em;*/
   }
 
 a {
@@ -66,7 +63,6 @@ a {
 footer {
   border-top: 1px solid black;
   margin: 0 auto;
-
   }
 
 
@@ -93,14 +89,16 @@ nav a {
 .profile-pic{
   width:60%;
   margin: 0 auto;
-  padding-top:1.5em;
-  padding-bottom: 1em;
+  padding-top:2em;
+  padding-bottom: 1.5em;
   padding-left: 1em;
   }
 
-.profile-intro{
+.profile-intro {
   font-size: 1.25em;
   padding-bottom: .5em;
+  width: 90%;
+  margin: 0 auto;
   }
 
 .portfolio-heading{
@@ -127,16 +125,24 @@ nav a {
   margin: 0 auto;
   }
 
-.skills, .contact{
-  padding-top: 3em;
-  }
-
-.phone, .email {
-  padding-top: 2em;
+.portfolio-text {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1em;
 }
 
+.skills, .contact{
+  padding-top: 3em;
+  width: 90%;
+  margin: 0 auto;
+  }
+
+.phone {
+  padding-top: 1em;
+  }
+
 .email{
-  padding-bottom: 5em;
+  padding-bottom: 3em;
   }
 
 
@@ -148,17 +154,14 @@ nav a {
   }
 
 .header-name {
-
   float: left;
   font-weight: bold;
-  /*padding-bottom: 1.5em;*/
   text-transform: none;
   margin: 0;
   padding: 0;
   }
 
 .back-to-top a{
-  /*display: inline-block;*/
   float:right;
   font-weight: bold;
   font-size: .75em;
@@ -167,7 +170,7 @@ nav a {
 
 .footer-nav a{
   display:none;
-}
+  }
 
 
   /* MEDIA QUERIES */
@@ -177,9 +180,16 @@ nav a {
 
   @media (min-width: 768px){
 
-  header {
-    padding: 1em 0;
-    }
+body {
+  padding-top: 1.5em;
+}
+
+header {
+  padding-top: 1em;
+  padding-bottom: 0;
+  }
+
+
 
 .main-nav a{
   background: azure;
@@ -188,6 +198,7 @@ nav a {
 .main-nav li{
   display: inline-block;
   margin: 0 1.5em;
+
   }
 
 
@@ -195,30 +206,33 @@ nav a {
   display: inline-block;
   width:90%;
   margin: 0 auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   }
 
 .profile-pic {
-
   float:right;
   width:40%;
+  padding-top: 1em;
   }
 
 .profile-intro{
-
-  line-height: 2em;
+  line-height: 1.5em;
   float: left;
   width: 60%;
   }
 
 .profile-intro p {
   text-align: left;
-  margin-left: 0;
   padding-top: 1.5em;
+  margin: 0;
+  margin-right: 0;
   }
 
 
 
-.main-portfolio{
+.main-portfolio,
+.portfolio-text{
   width: 90%;
   margin: 0 auto;
   }
@@ -253,16 +267,12 @@ nav a {
   margin: 1em auto;
   }
 
-/*.main-footer{
-  display: inline-block;
-  }*/
 
 .header-name{
-  /*display: inline-block;*/
   float: left;
   font-size: 1em;
   }
-    }
+
 
 .back-to-top a{
   float:left;
@@ -270,16 +280,23 @@ nav a {
   }
 
 
-.footer-nav{
-  float:right;
-  }
+.footer-li{
+  display: inline;
+  float: right;
+}
 
-.footer-nav a{
-  display: inline-block;
+.footer-li li{
   float: left;
   text-transform: uppercase;
   padding-left: 1em;
   }
+
+.footer-nav a{
+  display: inline;
+
+  }
+
+}
 
 
 
@@ -287,10 +304,16 @@ nav a {
   /******* DESKTOP SCREEN*******/
     @media (min-width: 1024px){
 
+h1 {
+  margin-bottom: 0;
+  margin-top: .5em;
+}
 
-
-  header {
+header {
     float: left;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     }
 
 .header-section {
@@ -307,13 +330,15 @@ nav a {
   padding-top: .5em;
   margin-left: 2em;
   margin-right: 0;
+  }
 
+.profile-intro p {
+  margin-right: 1em;
   }
 
 .profile-pic {
-
   float: right;
-}
+  }
 
 .port-background{
     width: 95%;
